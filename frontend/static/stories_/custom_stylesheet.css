@@ -1,0 +1,44 @@
+.sidebar nav .category { 
+  margin-top: 10px;
+  }
+  
+#content .project:hover img {
+  opacity: 0.1;
+}
+  
+#content .project:hover .project-title {
+  opacity:100;
+}
+
+#content .project .project-title {
+  font-family: karla, sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  text-align: centre;
+  margin-top:-135px;
+  padding-bottom:85px;
+  margin-left: 0px;
+  opacity:0;
+}  
+
+element.style {
+  font-size: 50%;
+}
+
+h2._4ORMAT_content_pages_title a{
+  color: #fff;
+  display: block;
+  font-size: 50px;
+  line-height: 1.5em;
+  margin: -10px auto 0;
+  text-align: left;
+  width: 80%;
+}
+
+h2._4ORMAT_content_pages_title a:hover{
+  text-decoration: none;
+}
+
+.sidebar .sidebar-wrap {
+  width:200px;
+}

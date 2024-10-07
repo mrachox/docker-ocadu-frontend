@@ -1,0 +1,28 @@
+/** recruitment 2020 **/
+
+#section6 .down-arrow{
+  display: none;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+#section1 .cta {
+  width: auto;
+  line-height: 1em;
+  display: block;
+  color: black;
+  background: white;
+}
+
+@media screen and (min-width: 480px) {
+
+  h1 {
+    font-size: 3em;
+  }
+
+  #section1 .cta {
+    width: 500px;
+  }
+}

@@ -1,0 +1,30 @@
+// page-nav classes from ironpoint
+
+.page-nav{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  li{
+    display: inline-block;
+
+    a{
+      display: inline-block;
+      text-decoration: none!important;
+      text-transform: uppercase;
+      font-family: 'gotham_bold', sans-serif!important;
+      border: 3px solid $primary;
+      padding: $spacer $spacer*2;
+      margin-right: $spacer;
+      margin-bottom: $spacer;
+      font-size: 1rem;
+
+      &:hover{
+        color: $light!important;
+        background: $primary;
+      }
+    }
+  }
+}

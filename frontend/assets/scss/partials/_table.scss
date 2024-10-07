@@ -1,0 +1,166 @@
+.small-copy {
+    font-size: 14px !important;
+    line-height: 15px;
+    font-family: gotham_regular, arial, sans-serif !important;
+    padding-top: 10px;
+}
+.small-italics {
+    font-size: 12px !important;
+    font-family: gotham_regular, arial, sans-serif !important;
+    font-style: italic;
+    line-height: 14px;
+    display: block;
+    padding-top: 10px;
+}
+.small-italics strong {
+    font-family: gotham_medium, arial, sans-serif !important;
+}
+.pdf {
+    padding-left: 6px;
+}
+div.form-title {
+    width: 54%;
+    font-size: 22px !important;
+    font-family: gotham_bold, arial bold, sans-serif !important;
+    float: left;
+    padding-left: 18px;
+}
+div.form-type {
+    width: 27%;
+    font-size: 22px !important;
+    font-family: gotham_bold, arial bold, sans-serif !important;
+    float: left;
+}
+div.form-download {
+    width: 10%;
+    font-size: 22px !important;
+    font-family: gotham_bold, arial bold, sans-serif !important;
+    float: left;
+    padding-left: 4px;
+}
+div.no-results {
+    z-index: -1;
+    font-style: italic;
+    text-align: center;
+    position: absolute;
+    margin-top: 60px;
+    width: 100%;
+}
+tr td.form-name {
+    font-size: 16px;
+    padding: 28px 28px 24px 20px;
+    font-family: gotham_bold, arial, sans-serif;
+    width: 48%;
+    font-weight: bold;
+}
+tr td.form-type {
+    font-size: 16px;
+    padding-top: 28px;
+    font-family: gotham_regular, arial, sans-serif;
+    width: 24%;
+}
+tr td.form-download {
+    font-size: 16px;
+    padding-top: 28px;
+    font-family: gotham_regular, arial, sans-serif;
+    width: 16%;
+}
+tr.form-row {
+    display: inline-table;
+    width: 100%;
+    position: relative !important;
+    z-index: 1;
+    background-color: #FFFFFF;
+}
+td.form-name span {
+    display: block;
+    font-family: gotham_regular, arial, sans-serif;
+    font-size: 11px;
+    line-height: 1.2em;
+}
+td.form-name span:first-letter {
+    font-family: gotham_bold, arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.2em;
+    font-style: italic;
+    font-weight: bold;
+}
+.form-row:nth-child(even) {
+    background-color: #f3f3f3 !important;
+}
+.glossary-search:hover::before {
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+select#form-types {
+    width: 100%;
+    max-width: 450px;
+    border: 1px solid #000 !important;
+    font-family: 'gotham_regular', arial, sans-serif;
+    font-size: 16px;
+    height: 40px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    background: #fff;
+    padding-left: 10px;
+    background-image: url("https://www.ocadu.ca/Assets/design/menu-arrow.jpg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    display: table;
+    margin: 0 auto;
+}
+.grid.grid_1 {
+    border: 0;
+}
+
+
+@media (max-width: 880px) {
+    h2 {
+        font-size: 36px;
+    }
+    td.form-type {
+        display: none;
+    }
+    .glossary-search input[type="text"] {
+        font-size: 22px !important;
+    }
+    .form-name {
+        font-size: 16px !important;
+    }
+    div.form-download,
+    div.form-title,
+    div.form-type,
+    tr td.form-download img {
+        display: none;
+    }
+    tr td.form-name {
+        font-size: 20px !important;
+        padding: 10px!important !important;
+        margin: 0 !important;
+        line-height: 1;
+        font-family: gotham_bold, arial, sans-serif;
+        width: 100%;
+    }
+    tr td.form-type {
+        font-size: 14px;
+        padding: 10px!important !important;
+        margin: 0 !important;
+        font-family: gotham_regular, arial, sans-serif;
+        font-style: italic;
+        width: 100%;
+    }
+    tr td.form-download {
+        font-size: 14px;
+        padding: 4px 0 6px 0 !important;
+        margin: 0 0 10px 10px;
+        font-family: gotham_regular, arial, sans-serif;
+        width: 100%;
+    }
+    .form-row {
+        position: relative;
+        display: inline-table;
+        width: 100%;
+        position: relative !important;
+    }
+}

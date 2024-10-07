@@ -1,0 +1,328 @@
+/** recruitment 2020 **/
+
+* {
+  transition: all 250ms ease;
+}
+
+body {
+  background-color: black !important;
+}
+
+header, #maincontentGradeEx h1, #maincontentGradeEx h2, #maincontentGradeEx h3, #maincontentGradeEx h4, #maincontentGradeEx p, div, footer p {
+  font-family: 'gotham';
+  /* color: white; */
+  background: none;
+}
+
+#maincontentGradeEx a {
+  color: black;
+}
+
+footer {
+  padding-top: 1em;
+  padding-bottom: 0;
+}
+
+footer p {
+  color: white;
+}
+
+/* MENU */
+
+#menu .active {
+  background: #F8D316;
+  padding: 5px;
+  border-radius: 0;
+}
+
+#menu .active a {
+  color: black;
+}
+
+#menu a:hover,
+#menu .active a:hover {
+  color: white;
+}
+
+/* BACKGROUNDS */
+
+#holder .top-bg, #holder .footer-bg {
+  background-image: none;
+}
+
+/* BANNER */
+
+#holder .banner {
+  background-image: url('../../gradex2020/img/bg.png');
+  background-position: right top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-top: 5em;
+}
+
+#holder .banner h2 {
+  margin-top: 1em;
+}
+
+#holder .banner .title {
+  margin-bottom: 1em;
+}
+
+#holder .banner .title h1 {
+  font-weight: 900;
+}
+
+#holder .banner .title h1, #holder .banner .title h2 {
+  font-size: 1em;
+}
+
+/* CTA */
+
+#holder .cta {
+  text-align: center;
+  background: #FB3099;
+  color: white;
+  margin-bottom: 1em;
+  padding: 1em;
+  /* padding: 10px 0; */
+}
+
+#holder .cta h2 {
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+#holder .cta h4 {
+  font-size: 1em;
+  /* text-transform: capitalize; */
+}
+
+#holder .cta a {
+  color: white;
+}
+
+#holder .cta a:hover {
+  opacity: .85;
+}
+
+/* EXPANDING */
+/* control */
+
+#holder .exhibitors img {
+  width: 100%;
+}
+
+#holder .expanding .control {
+  padding: 1em 0;
+}
+
+#holder .expanding .control a[aria-expanded="true"] {
+  background: none;
+}
+
+#holder .expanding .control div[class*="col-"] {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+#holder .expanding .control .facultyCollapse {
+  box-shadow: rgba(0, 0, 0, .075) 5px 1px 12px 5px;
+  padding: 10px;
+  background: white;
+  border-radius: 3px;
+  width: 100%;
+}
+
+#holder .expanding .control .facultyCollapse:hover,
+#holder .expanding .control .facultyCollapse:active {
+  box-shadow: none;
+  background: none;
+  text-decoration: none;
+}
+
+/* EXPANDING */
+/* buckets */
+
+#holder .expanding .buckets .collapsing {
+  background-color: transparent;
+  background: transparent;
+  transition: height 10ms ease;
+}
+
+#holder .expanding .buckets .collapse .card.card-body {
+  color: white;
+  background: transparent;
+  background-clip: unset;
+  border: rgba(0, 0, 0, 0);
+  border-radius: 0px;
+  padding: 0;
+}
+
+#holder .expanding .buckets .collapse .card.card-body .row {
+  margin-bottom: 0;
+}
+
+#holder .expanding .buckets .card.card-body .card-overlay {
+  background-size: cover;
+  background-position: 50%;
+  height: 200px;
+  position: relative;
+  transition: all .3 ease-in-out;
+}
+
+#holder .expanding .buckets .card.card-body .card-overlay h3:hover {
+  opacity: .75;
+}
+
+#holder .expanding .buckets .card.card-body .card-overlay h3 {
+  font-size: 1rem;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 100%;
+  vertical-align: middle;
+  line-height: normal;
+  padding: 0 20px;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+#holder .expanding .buckets .card.card-body .card-overlay h3::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: auto;
+  content: "";
+  background-color: transparent;
+}
+
+#holder .expanding .buckets .card.card-body .card-overlay::after {
+  content: "";
+  display: block;
+  background: #000;
+  opacity: .5;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+#holder .expanding .buckets .card.card-body .row div[class*="col-"] {
+  margin-bottom: 1em;
+}
+
+#holder .expanding .buckets .title h2 {
+  width: 100%;
+}
+
+#holder .expanding .buckets .title h2 {
+  color: black;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+#holder .expanding .buckets .card.card-body p {
+  color: black;
+  font-weight: bold;
+  background: white;
+}
+
+#holder {
+  background-color: #F8D316;
+  max-width: 100%;
+  margin: 0;
+}
+
+#section1Gradex .down-arrow {
+  display: none;
+}
+
+/* BREAKPOINTS */
+
+@media screen and (min-width: 480px) {
+
+  #holder .cta h2 {
+    font-size: 1.5em;
+  }
+
+  #holder .cta h4 {
+    font-size: 1.1em;
+    /* text-transform: capitalize; */
+  }
+
+  #holder .banner .title h1 {
+    font-size: 3em;
+  }
+
+  #holder .banner .title h2 {
+    font-size: 2em;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+
+  #holder .banner .title .row {
+    padding-top: 15%;
+  }
+
+  #holder .banner .title {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  #holder .expanding .buckets .card.card-body .card-overlay h3 {
+    hyphens: manual;
+  }
+
+  #menu .active {
+    border-radius: 3px;
+  }
+
+  #holder .expanding .buckets .collapse .card.card-body .row {
+    margin-bottom: 0;
+  }
+
+  #holder .top-bg {
+    background-image: url(../../gradex2020/img/spray-bg-rev.png);
+    height: 100px;
+    background-position: top;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    background-size: 30%;
+    background-repeat-y: no-repeat;
+  }
+
+
+  /* #holder .footer-bg {
+    background-image: url(../../gradex2020/img/spray-bg.png);
+    height: 100px;
+    background-position: bottom;
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+    background-size: 30%;
+    background-repeat-y: no-repeat;
+  } */
+}
+
+@media screen and (min-width: 1200px) {
+
+  #holder .expanding .buckets .card.card-body .card-overlay h3 {
+    font-size: 1.5rem;
+  }
+
+
+}

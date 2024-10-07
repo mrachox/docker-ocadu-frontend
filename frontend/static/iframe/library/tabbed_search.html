@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dorothy H. Hoover Library</title>
+    <style>
+		#go {
+            width: calc(30% - 30px) !important;
+            box-sizing: border-box;
+            clear: right;
+            color: #fff;
+            background: #000;
+            margin-bottom: 0px !important;
+        }
+	
+        .tabs {
+            width: 100%;
+            font-family: "lucida grande", sans-serif;
+        }
+		
+		[role="tabpanel"] {
+            position: relative;
+            z-index: 2;
+            padding: 0.5em 0.5em 0.7em;
+            border: 1px solid #000;
+            background: hsl(220, 43%, 99%);
+        }
+		
+		a {
+            color: #000;
+        }        
+			
+        .tabs form input {
+            clear: both;
+            box-sizing: border-box;
+            font-family: gotham book, arial, sans-serif;
+            font-size: 17px;
+            padding: 15px;
+            border: 3px solid #000;
+            background: #fff;
+            margin: 15px;
+        }
+		
+		.tabs form input[maxlength="255"] {
+            width: calc(70% - 30px) !important;
+            float: left;
+            box-sizing: border-box;
+            margin-bottom: 0px !important;
+        }
+      
+    </style>
+
+</head>
+
+<body>
+	<div class="tabs">	
+		
+		<div role="tabpanel">
+			<form id="simple" name="searchForm" role="search" method="get" action="https://ocadu.primo.exlibrisgroup.com/discovery/search" enctype="application/x-www-form-urlencoded; charset=utf-8" target="_new"  onsubmit="searchPrimo()">
+			 <!-- Customizable Parameters -->
+			<input type="hidden" name="vid" value="01OCUL_OCAD:OMNI">
+			<input type="hidden" name="tab" value="OCULDiscoveryNetwork">
+	        <input type="hidden" name="mode" value="basic">
+	        <!-- Fixed parameters -->
+	        <input type="hidden" name="displayMode" value="full">
+	        <input type="hidden" name="bulkSize" value="10">
+	        <input type="hidden" name="highlight" value="true">
+	        <input type="hidden" name="dum" value="true">
+	        <input type="hidden" name="query" id="primoQuery">
+	        <input type="hidden" name="displayField" value="all">
+                <input type="hidden" name="search_scope" value="OCULDiscoveryNetwork">
+	        <!-- Enable this if "Expand My Results" is enabled by default in Views Wizard -->
+	        <input type="hidden" name="pcAvailabiltyMode" value="true">
+			<input type="text" size="25" placeholder="Search print and digital collections (ebooks, articles, images, etc.)" maxlength="255" id="primoQueryTemp"/>
+			<input id="go" type="button" value="Search" title="Search" onclick="searchPrimo();" alt="Search">	
+			<p>
+                <br><a href="https://ocadu.primo.exlibrisgroup.com/discovery/search?vid=01OCUL_OCAD:OMNI&amp;mode=advanced" target=_blank>Advanced Search | <a href="https://ocadu.primo.exlibrisgroup.com/discovery/jsearch?vid=01OCUL_OCAD:OMNI" target=_blank>Journal Search</a> | <a href="https://ocadu.libguides.com/az.php" target=_blank>Databases A-Z</a> | <a href="http://ocadu.libguides.com/index.php?b=s" target=_blank>Research Guides</a> | <a href="https://ocadu.alma.exlibrisgroup.com/leganto/login?auth=SAML" target=_blank>Course Reserves</a> | <a href="https://www.ocadu.ca/services/library/services/interlibrary-loans"
+                        target=_blank>Interlibrary Loan</a> | <a href="https://ocadu.primo.exlibrisgroup.com/discovery/login?vid=01OCUL_OCAD:OMNI" target=_blank>My Account</a></p>
+            </form>	
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+      function searchPrimo() {
+             document.getElementById("primoQuery").value = "any,contains," + document.getElementById("primoQueryTemp").value;
+             document.forms["searchForm"].submit();
+      }
+      
+      function searchKeyPress(e) {
+            if (typeof e == 'undefined' && window.event) {
+                  e = window.event;
+            }
+            if (e.keyCode == 13) {
+                  document.getElementById('go').click();
+            }
+      }
+</script>
+
+</body>
+
+</html>

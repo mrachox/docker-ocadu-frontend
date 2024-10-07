@@ -1,0 +1,72 @@
+#live-new {
+    font-family: 'gotham_medium', sans-serif!important;
+
+
+        .header {
+          width: 100%;
+        }
+
+        .main-content{
+          background: url("https://www.ocadu.ca/sites/default/files/assets/media/live-bg.jpg");
+          background-size: cover;
+          width: 100%;
+
+          .fullwidth{
+            width: 100%;
+            height: auto;
+          }
+
+          .container{
+            background: white;
+          
+
+
+          }
+        }
+
+
+            .video {
+                iframe {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+            }
+
+}
+
+#on-demand{
+  background: white;
+
+}
+
+#live-nav {
+
+  margin-top: 2rem;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  text-transform: uppercase;
+
+  li{
+    display: inline-block;
+    margin-right: 4rem;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+  a{
+    font-family: 'gotham_medium', sans-serif!important;
+  }
+}
+
+//breakpoints
+@media screen and (min-width: 768px) {
+    #live-new {
+
+        overflow-y: hidden;
+
+    }
+}

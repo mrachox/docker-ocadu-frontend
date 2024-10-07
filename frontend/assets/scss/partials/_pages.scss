@@ -1,0 +1,165 @@
+// page-nav classes from ironpoint
+
+#students {
+    .login-box {
+        margin-bottom: 50px;
+        background-color: black;
+        padding: 30px;
+        text-transform: uppercase;
+        font-weight: bold;
+        .btn {
+          color: white;
+          border: 3px solid white;
+          width: 100px;
+        }
+    }
+    .page-nav {
+        text-align: left;
+    }
+}
+
+#gallery.onsite {
+  .onsite-logo {
+    .card {
+      .card-img {
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+
+#fcdc .grid-row img, #about .grid-row img, #wlc .grid-row img,  #library .grid-row img, #ic-cead .grid-row img {
+  width:100%;
+}
+
+#wlc strong {
+  font-family: 'gotham_bold', sans-serif;
+}
+
+// make the grad opening banner contained
+@media screen and (max-width: 768px) {
+    #gradualopening .component--hero .card-img {
+        object-fit: contain;
+    }
+}
+
+#carousel-fall2020 {
+  .carousel-indicators li{
+    background: black;
+    opacity: 0.2;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .carousel-indicators .active{
+    opacity: 1;
+  }
+}
+
+
+//address img sizes on hr-pages
+
+.grid-row .grid a img,
+one-col p img {
+width: 100%;
+}
+
+//popup admissions
+#popup{
+  .modal-body{
+    padding: 0;
+  }
+
+}
+
+.modal-backdrop{
+  opacity: 0.75!important;
+}
+
+//cead careerstories
+.careerstories{
+  color: black;
+
+  .filters{
+    width: 100%;
+  }
+
+  .careerstories-logo{
+    max-width: 150px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  h1{
+    color: #63a092;
+  }
+
+  blockquote{
+    font-size: 1.5rem;
+    color: #63a092;
+    font-family: 'gotham_bold', sans-serif;
+  }
+
+  .fixed{
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+
+  .alumni {
+    position: relative;
+    display: block!important;
+  }
+
+  .alumni-desc{
+    opacity: 0;
+    display: block!important;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+
+    p{
+      font-size: 1rem;
+    }
+  }
+
+  .alumni{
+    position: relative;
+
+    img{
+      width: 100%;
+      height: auto;
+      vertical-align: top;
+      transition: all 0.5s ease-in-out;
+    }
+
+    &:hover{
+      .alumni-desc{
+        opacity: 1;
+      }
+
+      img{
+        opacity: 0.2;
+      }
+
+    }
+  }
+
+} /* end of .careerstories */
+
+@media screen and (max-width: 640px) {
+    .careerstories {
+      .fixed {
+        position: static;
+      }
+
+      .alumni{
+        margin: 2rem;
+        display: block;
+      }
+    }
+}

@@ -1,0 +1,507 @@
+/** gradex 2021 **/
+
+:root {
+    --highlight-bg-color: rgb(181, 39, 97);
+    --button-bg-color: rgb(40, 80, 154);
+    --text-color: rgb(255,255,255);
+}
+
+* {
+    transition: all 175ms;
+}
+
+a, a:hover {
+    color: #FFF;
+}
+
+.buton-bar {
+    text-align: center;
+    align-items: center;
+}
+
+.button-bar a {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem 0;
+    margin: 1rem auto;
+    background: var(--button-bg-color);
+    color: #FFF !important;
+    text-align: center;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+.button-bar a:hover {
+    background: rgb(41, 110, 220);
+    transform: scale(1.02);
+}
+
+#maincontentGradeEx {
+    padding: 6rem 0;
+    background: #000;
+}
+
+body>footer {
+    background: none;
+}
+
+body>footer a {
+    color: black;
+}
+
+body>header>div {
+    padding: 1.5rem 0;
+}
+
+body>header a {
+    color: black;
+}
+
+body>header .logo img {
+    width: 100%;
+    max-width: 50px;
+}
+
+body>header #menu-button {
+    background: url('../../gradex2022/img/menu-white.png') no-repeat center center;
+}
+
+body>header #menu-button[aria-expanded="true"] {
+    background-image: url('../../gradex2022/img/menu_close-white.png');
+}
+
+html.home body>main>header,
+html.home body>main>section {
+    padding: 0;
+}
+
+main .video {
+    margin: 4rem 0;
+    border: none;
+    background: none;
+}
+
+main .video iframe {
+    border: none;
+    background: none;
+}
+
+header,
+#maincontentGradeEx h1,
+#maincontentGradeEx h2,
+#maincontentGradeEx h3,
+#maincontentGradeEx h4,
+#maincontentGradeEx p,
+div,
+footer p {
+    font-family: 'gotham';
+    background: none;
+}
+
+h1,
+h2 {
+    color: rgba(255, 255, 255, .8);
+    margin-bottom: 1rem;
+}
+
+
+/* MENU */
+
+#menu li {
+    background: #000;
+    padding: 5px 15px;
+    border: 1px solid #000;
+    text-transform: uppercase;
+}
+
+#menu .active {
+    border: 1px solid #FFF;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #EEEEEE;
+    font-weight: 600;
+}
+
+#menu li:hover {
+    background: var(--highlight-bg-color);
+
+}
+
+#menu li:hover a {
+    color: #333;
+}
+
+
+/* BANNER */
+
+#holder {
+    background: #000;
+    margin: 0 auto;
+    padding-top: 4rem;
+    text-align: left;
+}
+
+#holder .img {
+    margin-top: -50px;
+}
+
+#holder .title {
+    margin-top: 1rem;
+}
+
+#holder .title h1 {
+    font-weight: 900;
+    font-size: 6vmax;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    line-height: 80%;
+}
+
+#holder .title h2 {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    line-height: 2rem;
+}
+
+#holder .title h2 span {
+    padding: 2px;
+    background: var(--highlight-bg-color);
+
+    background: rgba(0, 0, 0, 0.25) !important;
+    font-weight: 900;
+}
+
+
+/* CTA */
+
+.cta {
+    text-align: center;
+    background: var(--highlight-bg-color);
+
+    padding: 2rem 0;
+}
+
+.cta h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.cta h4 {
+    font-size: 1rem;
+    color: var(--text-color);
+    /* text-transform: capitalize; */
+}
+
+.cta a {
+    color: white;
+}
+
+.cta a:hover {
+    opacity: .85;
+}
+
+
+/* EXPANDING */
+
+
+/* control */
+
+html .exhibitors h3 {
+    background: var(--highlight-bg-color);
+
+    text-transform: capitalize;
+    margin-bottom: 0;
+    font-size: 1.5rem !important;
+    background: rgba(0, 0, 0, 0.25) !important;
+    padding: 8px;
+}
+
+.expanding {
+    /* margin-top: -50px; */
+    padding-bottom: 4rem;
+}
+
+#holder .expanding .control {
+    padding: 1em 0;
+}
+
+#holder .expanding .control a[aria-expanded="true"] {
+    background: var(--highlight-bg-color);
+
+    background: var(--button-bg-color);
+}
+
+#holder .expanding .control div[class*="col-"] {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+#holder .expanding .control .facultyCollapse {
+    box-shadow: rgba(0, 0, 0, .075) 5px 1px 12px 5px;
+    padding: 2rem 0;
+    background: var(--highlight-bg-color);
+
+    /* border-radius: 3px; */
+    text-align: center;
+    color: var(--text-color);
+    width: 100%;
+}
+
+#holder .expanding .control .facultyCollapse:hover,
+#holder .expanding .control .facultyCollapse:active {
+    box-shadow: none;
+    background: var(--button-bg-color);
+    background: var(--highlight-bg-color);
+
+    text-decoration: none;
+}
+
+
+/* EXPANDING */
+
+
+/* buckets */
+
+#holder .expanding .buckets .collapsing {
+    background-color: transparent;
+    background: transparent;
+    transition: height 10ms ease;
+}
+
+#holder .expanding .buckets .collapse .card.card-body {
+    color: white;
+    background: transparent;
+    background-clip: unset;
+    border: rgba(0, 0, 0, 0);
+    border-radius: 0px;
+    padding: 0;
+}
+
+#holder .expanding .buckets .collapse .card.card-body .row {
+    margin-bottom: 0;
+}
+
+#holder .expanding .buckets .card.card-body .card-overlay {
+    background-size: cover;
+    background-position: 50%;
+    height: 200px;
+    position: relative;
+    transition: all .3 ease-in-out;
+}
+
+#holder .expanding .buckets .card.card-body .card-overlay h3:hover {
+    opacity: .75;
+}
+
+#holder .expanding .buckets .card.card-body .card-overlay h3 {
+    font-size: 1rem;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: 100%;
+    vertical-align: middle;
+    line-height: normal;
+    padding: 0 20px;
+    word-break: keep-all;
+}
+
+#holder .expanding .buckets .card.card-body .card-overlay h3::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: auto;
+    content: "";
+    background-color: transparent;
+}
+
+#holder .expanding .buckets .card.card-body .card-overlay::after {
+    content: "";
+    display: block;
+    background: #000;
+    opacity: .5;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#holder .expanding .buckets .card.card-body .row div[class*="col-"] {
+    margin-bottom: 1em;
+}
+
+#holder .expanding .buckets .title h2 {
+    width: 100%;
+}
+
+#holder .expanding .buckets .title h2 {
+    background: var(--highlight-bg-color);
+
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#holder .expanding .buckets .card.card-body p {
+    color: black;
+    font-weight: bold;
+    background: white;
+}
+
+#holder {
+    max-width: 100%;
+    margin: 0;
+}
+
+#holder .subpage {
+    padding-bottom: 10rem;
+}
+
+#holder .subpage.opening {
+    padding-bottom: 5rem;
+}
+
+#holder .subpage .iframe {
+    margin: 0 auto;
+}
+
+#holder .subpage p {
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+}
+
+#holder .inner {
+    margin-top: 2rem;
+    padding: 2rem;
+    background: var(--highlight-bg-color);
+
+    color: var(--text-color);
+}
+
+#holder .inner h2 {
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+#section1Gradex .down-arrow {
+    display: none;
+}
+
+#section1Gradex .img.cead {
+    object-fit: contain;
+    overflow: hidden;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 0 2rem 0;
+    padding: 0;
+}
+
+li {
+    padding: 0;
+    margin-bottom: 0.75rem;
+}
+
+li ul {
+    margin: 1rem 2rem 2rem;
+}
+
+
+/* FOOTER */
+
+body>footer {
+    background: #000;
+    padding: 2rem 0;
+}
+
+footer .col-md-6 p {
+    margin-bottom: 1rem;
+}
+
+footer p,
+body>footer a {
+    color: #AAAAAA;
+    font-weight: 400;
+    text-align: left;
+}
+
+footer ul {
+    list-style: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: .5rem;
+}
+
+footer ul a {
+    text-decoration: underline;
+}
+
+footer ul a:hover {
+    background: var(--button-bg-color);
+}
+
+
+/* BREAKPOINTS */
+
+@media screen and (min-width: 480px) {
+    #holder .cta h2 {
+        font-size: 1.4em;
+    }
+    #holder .cta h4 {
+        font-size: 1.1em;
+        /* text-transform: capitalize; */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #holder .img {
+        margin-top: 2rem;
+    }
+    .expanding {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #holder .expanding .buckets .card.card-body .card-overlay h3 {
+        hyphens: manual;
+    }
+    #holder .expanding .buckets .collapse .card.card-body .row {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 1141px) {
+    body>header nav ul {
+        margin: 1rem 0;
+    }
+    body>header nav li {
+        margin: 0 .5rem;
+    }
+}
+
+@media only screen and (max-width: 1141px) {
+    body>header #menu-button {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #holder .expanding .buckets .card.card-body .card-overlay h3 {
+        font-size: 1.25rem;
+    }
+}

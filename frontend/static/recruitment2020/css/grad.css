@@ -1,0 +1,15 @@
+/** recruitment 2020 **/
+
+#section6 .down-arrow{
+  display: none;
+}
+
+#section5 h1 {
+  width: auto;
+}
+
+@media screen and (min-width: 480px) {
+  #section5 h1 {
+    width: 515px;
+  }
+}

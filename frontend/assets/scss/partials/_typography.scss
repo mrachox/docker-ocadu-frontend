@@ -1,0 +1,305 @@
+/* =Fonts
+------------------------------------------------------ */
+// Gotham Book
+@font-face {
+	font-family: 'gotham_regular';
+    src: url('~assets/fonts/gotham-book-webfont.eot');
+    src: url('~assets/fonts/gotham-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('~assets/fonts/gotham-book-webfont.woff') format('woff'),
+         url('~assets/fonts/gotham-book-webfont.ttf') format('truetype'),
+         url('~assets/fonts/gotham-book-webfont.svg#gotham_regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gotham_bold';
+    src: url('~assets/fonts/gotham-bold-webfont.eot');
+    src: url('~assets/fonts/gotham-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('~assets/fonts/gotham-bold-webfont.woff') format('woff'),
+         url('~assets/fonts/gotham-bold-webfont.ttf') format('truetype'),
+         url('~assets/fonts/gotham-bold-webfont.svg#gotham_bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+// @font-face {
+//     font-family: 'gotham_italic';
+//     src: url('~assets/fonts/gotham-book-italic-webfont.eot');
+//     src: url('~assets/fonts/gotham-book-italic-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('~assets/fonts/gotham-book-italic-webfont.woff') format('woff'),
+//          url('~assets/fonts/gotham-book-italic-webfont.ttf') format('truetype'),
+//          url('~assets/fonts/gotham-book-italic-webfont.svg#gotham_italic') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+// @font-face {
+//     font-family: 'gotham_bolditalic';
+//     src: url('~assets/fonts/gotham-bold-italic-webfont.eot');
+//     src: url('~assets/fonts/gotham-bold-italic-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('~assets/fonts/gotham-bold-italic-webfont.woff') format('woff'),
+//          url('~assets/fonts/gotham-bold-italic-webfont.ttf') format('truetype'),
+//          url('~assets/fonts/gotham-bold-italic-webfont.svg#gotham_bolditalic') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+@font-face {
+    font-family: 'gotham_black';
+    src: url('~assets/fonts/gotham-black-webfont.eot');
+    src: url('~assets/fonts/gotham-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('~assets/fonts/gotham-black-webfont.woff') format('woff'),
+         url('~assets/fonts/gotham-black-webfont.ttf') format('truetype'),
+         url('~assets/fonts/gotham-black-webfont.svg#gotham_black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+// @font-face {
+//     font-family: 'gotham_blackitalic';
+//     src: url('~assets/fonts/gotham-black-italic-webfont.eot');
+//     src: url('~assets/fonts/gotham-black-italic-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('~assets/fonts/gotham-black-italic-webfont.woff') format('woff'),
+//          url('~assets/fonts/gotham-black-italic-webfont.ttf') format('truetype'),
+//          url('~assets/fonts/gotham-black-italic-webfont.svg#gotham_blackitalic') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+@font-face {
+    font-family: 'gotham_medium';
+    src: url('~assets/fonts/gotham-medium-webfont.eot');
+    src: url('~assets/fonts/gotham-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('~assets/fonts/gotham-medium-webfont.woff') format('woff'),
+         url('~assets/fonts/gotham-medium-webfont.ttf') format('truetype'),
+         url('~assets/fonts/gotham-medium-webfont.svg#gotham_medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+// @font-face {
+//     font-family: 'gotham_mediumitalic';
+//     src: url('~assets/fonts/gotham-medium-italic-webfont.eot');
+//     src: url('~assets/fonts/gotham-medium-italic-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('~assets/fonts/gotham-medium-italic-webfont.woff') format('woff'),
+//          url('~assets/fonts/gotham-medium-italic-webfont.ttf') format('truetype'),
+//          url('~assets/fonts/gotham-medium-italic-webfont.svg#gotham_mediumitalic') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+@font-face {
+    font-family: 'gotham_light';
+    src: url('~assets/fonts/gotham-light-webfont.eot');
+    src: url('~assets/fonts/gotham-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('~assets/fonts/gotham-light-webfont.woff') format('woff'),
+         url('~assets/fonts/gotham-light-webfont.ttf') format('truetype'),
+         url('~assets/fonts/gotham-light-webfont.svg#gotham_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gotham_lightitalic';
+    src: url('~assets/fonts/gotham-light-italic-webfont.eot');
+    src: url('~assets/fonts/gotham-light-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('~assets/fonts/gotham-light-italic-webfont.woff') format('woff'),
+         url('~assets/fonts/gotham-light-italic-webfont.ttf') format('truetype'),
+         url('~assets/fonts/gotham-light-italic-webfont.svg#gotham_lightitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+// @font-face {
+//     font-family: 'gotham_thin';
+//     src: url('~assets/fonts/gotham-thin-webfont.eot');
+//     src: url('~assets/fonts/gotham-thin-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('~assets/fonts/gotham-thin-webfont.woff') format('woff'),
+//          url('~assets/fonts/gotham-thin-webfont.ttf') format('truetype'),
+//          url('~assets/fonts/gotham-thin-webfont.svg#gotham_thin') format('svg');
+//     font-weight: normal;
+// 	font-style: normal;
+// }
+// @font-face {
+//     font-family: 'gotham_thinitalic';
+//     src: url('~assets/fonts/gotham-thin-italic-webfont.eot');
+//     src: url('~assets/fonts/gotham-thin-italic-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('~assets/fonts/gotham-thin-italic-webfont.woff') format('woff'),
+//          url('~assets/fonts/gotham-thin-italic-webfont.ttf') format('truetype'),
+//          url('~assets/fonts/gotham-thin-italic-webfont.svg#gotham_thinitalic') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+//Malaga
+@font-face {
+    font-family: 'malaga_reg';
+    src: url('~assets/fonts/malagaot-reg-webfont.eot');
+    src: url('~assets/fonts/malagaot-reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('~assets/fonts/malagaot-reg-webfont.woff') format('woff'),
+         url('~assets/fonts/malagaot-reg-webfont.ttf') format('truetype'),
+         url('~assets/fonts/malagaot-reg-webfont.svg#malaga_reg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'malaga_bold';
+    src: url('~assets/fonts/malagaot-bold-webfont.eot');
+    src: url('~assets/fonts/malagaot-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('~assets/fonts/malagaot-bold-webfont.woff') format('woff'),
+         url('~assets/fonts/malagaot-bold-webfont.ttf') format('truetype'),
+         url('~assets/fonts/malagaot-bold-webfont.svg#malaga_bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'malaga_bolditalic';
+    src: url('~assets/fonts/malagaot-bolditalic-webfont.eot');
+    src: url('~assets/fonts/malagaot-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('~assets/fonts/malagaot-bolditalic-webfont.woff') format('woff'),
+         url('~assets/fonts/malagaot-bolditalic-webfont.ttf') format('truetype'),
+         url('~assets/fonts/malagaot-bolditalic-webfont.svg#malaga_bolditalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'malaga_med';
+    src: url('~assets/fonts/malagaot-med-webfont.eot');
+    src: url('~assets/fonts/malagaot-med-webfont.eot?#iefix') format('embedded-opentype'),
+         url('~assets/fonts/malagaot-med-webfont.woff') format('woff'),
+         url('~assets/fonts/malagaot-med-webfont.ttf') format('truetype'),
+         url('~assets/fonts/malagaot-med-webfont.svg#malaga_med') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'malaga_italic';
+    src: url('~assets/fonts/malagaot-regitalic-webfont.eot');
+    src: url('~assets/fonts/malagaot-regitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('~assets/fonts/malagaot-regitalic-webfont.woff') format('woff'),
+         url('~assets/fonts/malagaot-regitalic-webfont.ttf') format('truetype'),
+         url('~assets/fonts/malagaot-regitalic-webfont.svg#malaga_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'malaga_meditalic';
+    src: url('~assets/fonts/malagaot-meditalic-webfont.eot');
+    src: url('~assets/fonts/malagaot-meditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('~assets/fonts/malagaot-meditalic-webfont.woff') format('woff'),
+         url('~assets/fonts/malagaot-meditalic-webfont.ttf') format('truetype'),
+         url('~assets/fonts/malagaot-meditalic-webfont.svg#malaga_meditalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'malaga_black';
+    src: url('~assets/fonts/malagaot-black-webfont.eot');
+    src: url('~assets/fonts/malagaot-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('~assets/fonts/malagaot-black-webfont.woff') format('woff'),
+         url('~assets/fonts/malagaot-black-webfont.ttf') format('truetype'),
+         url('~assets/fonts/malagaot-black-webfont.svg#malaga_black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'malaga_black_italic';
+    src: url('~assets/fonts/malagaot-blackitalic-webfont.eot');
+    src: url('~assets/fonts/malagaot-blackitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('~assets/fonts/malagaot-blackitalic-webfont.woff') format('woff'),
+         url('~assets/fonts/malagaot-blackitalic-webfont.ttf') format('truetype'),
+         url('~assets/fonts/malagaot-blackitalic-webfont.svg#malaga_black_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'alarm-clock';
+    src: url('~assets/fonts/alarm-clock.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+// @font-face {
+//     font-family: 'malaga_narrow_reg';
+//     src: url('~assets/fonts/malaganarrowot-reg-webfont.eot');
+//     src: url('~assets/fonts/malaganarrowot-reg-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('~assets/fonts/malaganarrowot-reg-webfont.woff') format('woff'),
+//          url('~assets/fonts/malaganarrowot-reg-webfont.ttf') format('truetype'),
+//          url('~assets/fonts/malaganarrowot-reg-webfont.svg#malaga_narrow_reg') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+// @font-face {
+//     font-family: 'malaga_narrow_reg_italic';
+//     src: url('~assets/fonts/malaganarrowot-regitalic-webfont.eot');
+//     src: url('~assets/fonts/malaganarrowot-regitalic-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('~assets/fonts/malaganarrowot-regitalic-webfont.woff') format('woff'),
+//          url('~assets/fonts/malaganarrowot-regitalic-webfont.ttf') format('truetype'),
+//          url('~assets/fonts/malaganarrowot-regitalic-webfont.svg#malaga_narrow_reg_italic') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+.larger{
+  font-size: 150%;
+}
+
+
+body {
+  font-family: 'gotham_regular', Arial, sans-serif;
+}
+
+strong {
+	font-family: 'gotham_bold', Arial, sans-serif;
+}
+
+.site-content{
+	p,
+	ul li,
+	ol li {
+		font-family: 'malaga_reg', serif;
+		font-size: 1.2rem;
+	}
+
+}
+
+.site-content{
+	.sub-nav li{
+		font-family: 'malaga_reg', serif;
+		font-size: 1.2rem;
+		line-height: 1.1em;
+		margin-bottom: 5px;
+	}
+}
+
+.the-content, .grid, p {
+	a {
+		text-decoration: underline;
+	}
+}
+
+@function headings($from:1, $to:6) {
+    @if $from == $to {
+        @return 'h#{$from}';
+    } @else {
+        @return 'h#{$from},' + headings($from+1, $to);
+    }
+}
+
+#{headings(1,6)} {
+  font-family: 'gotham_bold', Arial, sans-serif;
+	margin-bottom: 1.25rem;
+}
+
+
+
+/* styles for layout-onecol */
+
+.one-col{
+	#{headings(1,2)} {
+	  text-align: center;
+		margin: 0 auto;
+		margin-bottom: 1rem;
+	}
+
+	h2{
+		border-bottom: 3px solid black;
+		padding-bottom: 1rem;
+		margin-top: 1rem;
+	}
+
+	h3{
+		font-size: 1.5rem;
+	}
+}

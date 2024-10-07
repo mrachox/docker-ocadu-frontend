@@ -1,0 +1,26 @@
+services:
+  frontend: 
+    image: node:16.20.2
+    command: npm run docker
+    volumes:
+      - web-dist:/usr/src/dist
+      - ./frontend:/usr/src/app
+    working_dir: /usr/src/app
+    ports: 
+      - "3002:3002"
+    environment:
+      HOST: 0.0.0.0
+      NODE_OPTIONS: --max-old-space-size=8096
+      
+  server:
+    image: node:16.20.2
+    command: npm run docker
+    volumes:
+      - web-dist:/usr/src/dist
+      - ./server:/usr/src/app
+    working_dir: /usr/src/app
+    ports:
+      - "4000:4000"
+
+volumes:
+  web-dist:

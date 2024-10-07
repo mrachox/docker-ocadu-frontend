@@ -1,0 +1,315 @@
+// wrapper class for ironpoint generic pages
+.page-wrapper {
+    width: 100%;
+}
+
+.the-content {
+    padding: 3rem 0;
+}
+
+// ironpoint grid
+// .content-block780{
+//   max-width: 780px;
+//   margin: 0 auto;
+// }
+.grid-row {
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -0.5rem;
+    margin-left: -0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.grid {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+@media only screen and (min-width: 641px) {
+    .grid-row {
+        .grid_2 {
+            -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+            max-width: 50%;
+        }
+        .grid_2_1_3,
+        .grid_3 {
+            -ms-flex-preferred-size: 33.33333333%;
+            flex-basis: 33.33333333%;
+            max-width: 33.33333333%;
+        }
+        .grid_4 {
+            -ms-flex-preferred-size: 25%;
+            flex-basis: 25%;
+            max-width: 25%;
+        }
+        .grid_2_2_3 {
+            -ms-flex-preferred-size: 65%;
+            flex-basis: 65%;
+            max-width: 65%;
+        }
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .grid_2,
+    .grid_2_1_3,
+    .grid_3,
+    .grid_2_2_3,
+    .grid_4 {
+        width: 100%;
+    }
+}
+
+// the-landing
+.credit {
+    text-align: right;
+}
+
+.the-landing {
+    width: 100%;
+    background: black;
+    position: relative;
+    overflow: hidden;
+}
+
+.rec-title-blackout {
+    background: black;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    position: relative;
+    z-index: 99;
+    font-size: 2.8rem;
+    margin-top: -60px;
+}
+
+.common-btn {
+    text-decoration: none!important;
+    margin: 2rem 0;
+    display: inline-block;
+    font-family: 'gotham_regular', sans-serif!important;
+    border: 1px solid $primary!important;
+    color: $primary!important;
+    padding: $spacer*0.5 $spacer!important;
+    text-transform: uppercase;
+    font-size: 0.8rem!important;
+    text-decoration: none;
+    &:hover {
+        color: $light!important;
+        background: $primary;
+    }
+}
+
+// accordions
+.accordion-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 10px auto 40px auto;
+}
+
+.accordion-content {
+    background-color: #fff;
+    border-bottom: 1px solid #000;
+    display: none;
+    padding: 20px;
+}
+
+.accordion-content p {
+    font-size: 20px;
+}
+
+.accordion-title {
+    .title {
+        font-family: gotham_bold;
+        font-size: 18px;
+        text-transform: uppercase;
+        word-break: break-word;
+        width: 90%;
+    }
+    a {
+        &:hover {
+            background: #000;
+            color: #fff;
+        }
+    }
+}
+
+.accordion-title>a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #000;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    position: relative;
+}
+
+.accordion-title>a .fa {
+    position: absolute;
+    right: 10px;
+    bottom: calc(50% - 10px);
+}
+
+.accordion-title>a.active {
+    background-color: #000000;
+    color: #fff;
+}
+
+// helpful contacts
+.contact {
+    margin: 4rem 0;
+}
+
+.filters {
+    background: url(https://ocadu.ca/Assets/design/menu-arrow.jpg) no-repeat 98% 40%;
+    background-size: 20px 20px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    padding-left: 10px;
+    height: 35px;
+    border: 1px solid #000;
+    border-radius: 0px !important;
+    font-size: 16px;
+    font-family: gotham_regular, Arial, Sans-serif;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.programlabel {
+    width: 100%;
+    display: block;
+}
+
+.common-btn.large {
+    font-size: 22px;
+    font-family: gotham_bold, Arial, Sans-serf;
+    border-width: 2px !important;
+    padding: 15px 20px 15px 20px;
+}
+
+
+/* president hero */
+
+.exec-bio-intro {
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.exec-bio-intro>.container {
+    max-width: 1240px;
+}
+
+.exec-bio-intro .bio-contact .common-btn {
+    font-size: 12px;
+    color: #fff!important;
+    border-color: #fff !important;
+    margin: 0 0 16px 0;
+}
+
+@media screen and (min-width: 55em) {
+    .exec-bio-intro {
+        min-height: 450px;
+        text-align: left;
+    }
+    .exec-bio-intro .fac-type {
+        font-family: gotham_bold;
+        font-size: 24px;
+        margin-bottom: 2em;
+        text-transform: uppercase;
+    }
+    .exec-bio-intro .bio-text h1 {
+        margin-bottom: .1em;
+    }
+    .exec-bio-intro .bio-title {
+        font-family: malaga_italic;
+        font-size: 23px;
+    }
+    .exec-bio-intro .bio-contact {
+        padding: .7em 3em 0 0;
+    }
+    .exec-bio-intro .bio-contact .common-btn {
+        margin: 0 16px 16px 0;
+    }
+}
+
+@media screen and (min-width: 67.5em) {
+    .exec-bio-intro .bio-text {
+        width: 41.12903%;
+        padding-top: 80px;
+        float: right;
+    }
+}
+
+
+/* full width iframe video and image in one-col */
+
+.one-col {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.fullwidth {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+/* admission/programs */
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 67.5em) {
+    .fullwidth-video {
+        text-align: center;
+        iframe {
+            width: 100%!important;
+        }
+    }
+    .video-wrapper {
+        // position: static;
+        // padding: 0;
+        height: auto;
+        iframe {
+            // position: static;
+        }
+    }
+}
