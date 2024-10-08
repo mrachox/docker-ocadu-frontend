@@ -12,16 +12,6 @@ services:
       NODE_OPTIONS: --max-old-space-size=8096
       NODE_ENV: development
 
-  # server:
-  #   image: node:16.20.2
-  #   command: npm run docker
-  #   volumes:
-  #     - web-dist:/usr/src/dist
-  #     - ./server:/usr/src/app
-  #   working_dir: /usr/src/app
-  #   ports:
-  #     - "4000:4000"
-
   web:
     image: nginx
     volumes:
