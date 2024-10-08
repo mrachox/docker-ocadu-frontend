@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3002
+// const port = 3002
 
 app.use(express.static('dist'))
 
@@ -9,6 +9,6 @@ app.use(express.static('dist'))
 //   res.send('Hello World!')
 // })
 
-app.listen(port, () => {
-  console.log(`App listening on port ${port}`)
-})
+// app.listen(port, () => {
+//   console.log(`App listening on port ${port}`)
+// })

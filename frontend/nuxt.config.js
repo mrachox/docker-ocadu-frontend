@@ -37,10 +37,7 @@ export default {
         //   { src: '/mmenu.js' }
         // ],
         script: [{
-                // type: 'text/javascript',
-                // src: 'https://cse.google.com/cse?cx=004526095293608231379:vpfemak4rin',
-                // src: 'https://cse.google.com/cse.js?cx=20765201169ee41de',
-                // async: true
+      
             },
             {
                 type: 'text/javascript',
@@ -77,57 +74,15 @@ export default {
         { src: '~/plugins/client-only' },
         { src: '~/plugins/vue-carousel', ssr: false }
     ],
-    /*
-     ** Nuxt.js modules
-     */
-    // buildModules: [
-    //   '@nuxtjs/gtm',
-    // ],
-    // gtm: {
-    //   id: 'GTM-TM5DPVZ',
-    //   dev: true,
-    //   id: null,
-    //   layer: 'dataLayer',
-    //   variables: {},
-    //
-    //   pageTracking: false,
-    //   pageViewEventName: 'nuxtRoute',
-    //
-    //   autoInit: true,
-    //   respectDoNotTrack: true,
-    //
-    //   scriptId: 'gtm-script',
-    //   scriptDefer: false,
-    //   scriptURL: 'https://www.googletagmanager.com/gtm.js',
-    //
-    //   noscript: true,
-    //   noscriptId: 'gtm-noscript',
-    //   noscriptURL: 'https://www.googletagmanager.com/ns.html'
-    // },
+    
     modules: [
         // With options
         '@nuxtjs/style-resources',
         // Doc: https://bootstrap-vue.js.org/docs/
         'bootstrap-vue/nuxt',
-        // Doc: https://www.npmjs.com/package/nuxt-fontawesome
-        // Tut: https://medium.com/@kozyreva.hanna/nuxt-js-fontawesome-integration-7ec56b1a41c8
-        // [
-        //   'nuxt-fontawesome', {
-        //     imports: [{
-        //         set: '@fortawesome/free-solid-svg-icons',
-        //         icons: ['fas']
-        //       },
-        //       {
-        //         set: '@fortawesome/free-brands-svg-icons',
-        //         icons: ['fab']
-        //       }
-        //     ]
-        //   }
-        // ]
+        
     ],
-    // serverMiddleware: [
-    //   '~/api/index.js',
-    // ],
+   
     axios: {
         // proxyHeaders: false,
         credentials: false,
@@ -168,60 +123,12 @@ export default {
     (**/
     router: {
         base: process.env.ROUTER_BASE || '/',
-        // extendRoutes (routes) {
-        //     routes.push({
-        //       name: 'Custom',
-        //       path: '*',
-        //       meta: 'CUSTOM',
-        //     })
-        // }
-        /*
-         ** Router configuration
-         */
-
-        /*
-        scrollBehavior: async function(to, from, savedPosition) {
-            if (savedPosition) {
-                return savedPosition;
-            }
-
-            const findEl = async(hash, x = 0) => {
-                return (
-                    document.querySelector(hash) ||
-                    new Promise(resolve => {
-                        if (x > 50) {
-                            return resolve(document.querySelector("#app"));
-                        }
-                        setTimeout(() => {
-                            resolve(findEl(hash, ++x || 1));
-                        }, 100);
-                    })
-                );
-            };
-
-            if (to.hash) {
-                let el = await findEl(to.hash);
-                if ("scrollBehavior" in document.documentElement.style) {
-                    return window.scrollTo({
-                        top: el.offsetTop,
-                        behavior: "smooth"
-                    });
-                } else {
-                    return window.scrollTo(0, el.offsetTop);
-                }
-            }
-
-            return {
-                x: 0,
-                y: 0
-            };
-        }
-        */
+        
     },
 
     generate: {
         concurrency: 10,
-        dir: process.env.GENERATE_DIR || '../dist',
+        dir: process.env.GENERATE_DIR,
         routes: function() {
             var apiBaseUrl = process.env.API_BASE_URL || 'https://live-ocad.pantheonsite.io/api'
                 // let aca_ell = axios.get('https://www.ocadu.ca/api/ell-pages')
@@ -310,12 +217,6 @@ export default {
                         return '/academics/' + aca_grad1.field_slug
                     })
                 })
-                // let aca_grad_child = axios.get(apiBaseUrl + '/grad-child-pages')
-                //     .then((res) => {
-                //           return res.data.map((aca_grad_child) => {
-                //             return '/academics/' + aca_grad_child.field_slug
-                //           })
-                // })
             let aca_minors = axios.get(apiBaseUrl + '/minor-programs-pages')
                 .then((res) => {
                     return res.data.map((aca_minors) => {
@@ -533,12 +434,6 @@ export default {
                         return '/services/writing-and-learning-centre/wlc-services/' + ser_wlc1.field_slug
                     })
                 })
-                // let ser_wlc2 = axios.get(apiBaseUrl + '/wlc-pages')
-                //   .then((res) => {
-                //     return res.data.map((ser_wlc2) => {
-                //       return '/services/writing-and-learning-centre/undergraduate-students/' + ser_wlc2.field_slug
-                //     })
-                //   })
             let students = axios.get(apiBaseUrl + '/students-pages')
                 .then((res) => {
                     return res.data.map((students) => {
@@ -569,12 +464,7 @@ export default {
                         return '/students/' + students_fall.field_slug
                     })
                 })
-                // let ocadu_live = axios.get(apiBaseUrl + '/ocadu-live')
-                //     .then((res) => {
-                //         return res.data.map((ocadu_live) => {
-                //             return ocadu_live.field_slug
-                //         })
-                //     })
+                
 
             return Promise.all([
                 about,
@@ -591,7 +481,6 @@ export default {
                 aca_folassis,
                 aca_grad,
                 aca_grad1,
-                // aca_grad_child,
                 aca_minors,
                 aca_mobilityex,
                 aca_mobilityexout,
@@ -628,13 +517,11 @@ export default {
                 ser_rr,
                 ser_wlc,
                 ser_wlc1,
-                // ser_wlc2,
                 students,
                 students_ai,
                 students_svs,
                 students_policies,
                 students_fall
-                //               ocadu_live
             ]).then(values => {
                 return values.join().split(',');
             })

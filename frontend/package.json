@@ -11,7 +11,7 @@
         "generate": "nuxt generate",
         "clearSpace": "export NODE_OPTIONS='--max-old-space-size=8096' GENERATE_SOURCEMAP='false'",
         "heroku-postbuild": "npm run generate",
-        "docker": "npm run clearSpace && npm run generate"
+        "docker": "npm install && npm run clearSpace && npm run generate"
     },
     "dependencies": {
         "@nuxtjs/gtm": "^2.2.3",

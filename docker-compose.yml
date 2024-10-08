@@ -3,7 +3,6 @@ services:
     image: node:16.20.2
     command: npm run docker
     volumes:
-      - web-dist:/usr/src/dist
       - ./frontend:/usr/src/app
     working_dir: /usr/src/app
     ports: 
@@ -11,16 +10,26 @@ services:
     environment:
       HOST: 0.0.0.0
       NODE_OPTIONS: --max-old-space-size=8096
-      
-  server:
-    image: node:16.20.2
-    command: npm run docker
+      NODE_ENV: development
+
+  # server:
+  #   image: node:16.20.2
+  #   command: npm run docker
+  #   volumes:
+  #     - web-dist:/usr/src/dist
+  #     - ./server:/usr/src/app
+  #   working_dir: /usr/src/app
+  #   ports:
+  #     - "4000:4000"
+
+  web:
+    image: nginx
     volumes:
-      - web-dist:/usr/src/dist
-      - ./server:/usr/src/app
-    working_dir: /usr/src/app
+      - ./templates:/etc/nginx/templates
+      - ./frontend/dist:/usr/share/nginx/dist
     ports:
-      - "4000:4000"
+      - "80:80"
+    
 
 volumes:
   web-dist:
